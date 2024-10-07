@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: vue-recruitment-refactor-assignment
+  description: Front-end part of recruitment assignment for full stack dev position
+  labels:
+    scaffolder-template-name: create-repository
+  annotations:
+    github.com/project-slug: DocPlanner/vue-recruitment-refactor-assignment-front-app
+spec:
+  type: service
+  lifecycle: experimental
+  owner: docplanner/${{ parameters.owner | parseEntityRef | pick('name') }}
+

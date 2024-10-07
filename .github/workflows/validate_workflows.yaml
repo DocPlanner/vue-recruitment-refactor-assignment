@@ -1,0 +1,16 @@
+name: Auto approve Workflow changes
+
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - reopened
+      - synchronize
+    paths:
+      - .github/workflows/**
+
+jobs:
+  validate-workflow-changes:
+    uses: Docplanner/devops-pipelines/.github/workflows/validate_workflows.yaml@v1
+    secrets: inherit

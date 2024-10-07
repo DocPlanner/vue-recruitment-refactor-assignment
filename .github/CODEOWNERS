@@ -1,0 +1,8 @@
+* @DocPlanner/${{ parameters.owner | parseEntityRef | pick('name') }}
+
+#DevOps 
+.docker/ @DocPlanner/ops
+.policies/ @DocPlanner/ops
+.github/ @DocPlanner/ops
+.github/workflows/   @docplannersec @DocPlanner/ops
+.github/workflows/validate_workflows.yaml   @DocPlanner/ops
